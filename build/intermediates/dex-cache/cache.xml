@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\jag028\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_32caf90e8d9d9fb5f03a2e537e1e5939b121e213\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_b36c8cb49a92fa29cb7d80313fe688e45ed9e717\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_5aefb8bc2a76410957e8f09d01cf3b27305019d3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="302770bc1f00ac970c625401bc7f5d3f4b9984ab">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e4014abe83887521cf2555bf1cbeb55f9c464e4b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_ab35813173e2d0cb275fca990e5926063d702c3f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_dfe10496c8e177711807424b4064b16f7c1d1b0d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_262eb259173cb3d6b1a078ec3e5a591688582180\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_d8c922ad20fff33b2263be115bd41c87deb5293f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a94a32d2bd4f1358e3afbb79577b174ae2336152">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8b3d0427b24a309430ddad83e26dcff8066e20ab\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\jag028\OneDrive\Android App\SHPE\SHPESTUDY\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_11bda2fe6bea6e22105d059205cbfaccfd7f155d\classes.dex" />
+    </item>
+
+</items>
