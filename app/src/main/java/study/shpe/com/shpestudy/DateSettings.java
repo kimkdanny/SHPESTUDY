@@ -4,12 +4,10 @@ import android.app.DatePickerDialog;
 import android.content.Context;
 import android.widget.DatePicker;
 
-/**
- * Created by nguyen on 5/7/2016.
- */
+
 public class DateSettings implements DatePickerDialog.OnDateSetListener {
     Context context;
-    static MainActivity mainActivity;
+    static CreateFormActivity mainActivity;
 
     public DateSettings(Context context){
         this.context = context;

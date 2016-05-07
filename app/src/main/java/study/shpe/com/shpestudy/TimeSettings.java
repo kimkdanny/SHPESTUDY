@@ -10,7 +10,7 @@ import android.widget.Toast;
  */
 public class TimeSettings implements TimePickerDialog.OnTimeSetListener {
     Context context;
-    static MainActivity mainActivity;
+    static CreateFormActivity mainActivity;
 
     public TimeSettings(Context context){
         this.context = context;

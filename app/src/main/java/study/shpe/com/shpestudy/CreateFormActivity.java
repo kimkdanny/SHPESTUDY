@@ -1,5 +1,6 @@
 package study.shpe.com.shpestudy;
 
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,9 +11,6 @@ import android.widget.TimePicker;
 
 import com.firebase.client.Firebase;
 
-/**
- * Created by nguyen on 5/7/2016.
- */
 public class CreateFormActivity extends AppCompatActivity {
     EditText name;
     EditText place;
@@ -50,7 +48,12 @@ public class CreateFormActivity extends AppCompatActivity {
         TimePickerFragment newFragment = new TimePickerFragment();
         newFragment.show(getFragmentManager(), "timePicker");
     }
+    public void showDatePickerDialog(View v) {
+        DateSettings.mainActivity = this;
+        DatePickerFragment newFragment = new DatePickerFragment();
+        newFragment.show(getFragmentManager(), "datePicker");
 
+    }
     public void clicked(View v) {
         nameText = name.getText().toString();
 
