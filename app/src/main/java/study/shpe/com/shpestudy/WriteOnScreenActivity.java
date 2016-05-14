@@ -1,4 +1,4 @@
-package stuff.ricardo.com.ricardosapp;
+package study.shpe.com.shpestudy;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

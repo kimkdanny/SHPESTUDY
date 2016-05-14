@@ -1,4 +1,4 @@
-package stuff.ricardo.com.ricardosapp;
+package study.shpe.com.shpestudy;
 
 import android.content.Context;
 import android.graphics.Canvas;
