@@ -68,7 +68,7 @@ public class CreateFormActivity extends AppCompatActivity {
 
         Firebase ref = new Firebase("https://shpestudy.firebaseio.com/");
         Firebase eventRef = ref.child("shpestudy").child(nameText);
-        Event event = new Event(nameText, placeText, capacityText, day, month, hour, minute);
+        DerpEvent event = new DerpEvent(nameText, placeText, capacityText, day, month, hour, minute);
         eventRef.setValue(event);
     }
 

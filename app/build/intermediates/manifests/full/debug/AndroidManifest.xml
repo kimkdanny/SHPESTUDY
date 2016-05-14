@@ -23,11 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="study.shpe.com.shpestudy.CreateFormActivity" />
         <activity
             android:name="study.shpe.com.shpestudy.RecyclerView"
             android:label="@string/title_activity_recycler_view"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="study.shpe.com.shpestudy.ui.ListActivity" />
+        <activity android:name="study.shpe.com.shpestudy.ui.DetailActivity" />
     </application>
 
 </manifest>
