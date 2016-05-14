@@ -17,13 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateFormActivity" >
+        <activity android:name=".SignupActivity" >
         </activity>
-        <activity
-            android:name=".RecyclerView"
-            android:label="@string/title_activity_recycler_view"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.ListActivity" />
+        <activity android:name=".SampleActivity" >
+        </activity>
+
     </application>
 
 </manifest>
