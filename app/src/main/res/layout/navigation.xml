@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:id="@+id/feed"
+        android:text="Feed"
+        android:background="#2A7DD0"/>
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:id="@+id/newEvent"
+        android:layout_toRightOf="@id/feed"
+        android:text="New Event"
+        android:background="#2A7DD0"/>
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:id="@+id/shpePoints"
+        android:layout_toRightOf="@id/newEvent"
+        android:text="SHPE Points"
+        android:background="#2A7DD0"/>
+
+</RelativeLayout>

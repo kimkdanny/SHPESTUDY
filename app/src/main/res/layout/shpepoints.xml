@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#166170"
+    android:gravity="top">
+
+    <info.hoang8f.widget.FButton
+        fbutton:buttonColor="#95a5a6"
+        fbutton:shadowColor="#7f8c8d"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:text="Date"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_gravity="center_horizontal"
+        android:text="Activity"
+        android:textColor="#ffffff" />
+    <View android:layout_height="100dp"
+        android:layout_width="100dp"
+        />
+
+    <ViewStub
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewStub" />
+
+    <Button
+        android:id="@+id/angry_btn"
+
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:background="#77e8d9"
+        android:contextClickable="true"
+        android:fontFamily="sans-serif-thin"
+        android:focusable="false"
+        android:textAlignment="center"
+        android:layout_above="@+id/angry_btn2"
+        android:layout_alignStart="@+id/angry_btn2"
+        android:layout_alignLeft="@+id/angry_btn2"
+        android:onClick="onLoginButtonClick"
+        android:layout_margin="30dp"
+        android:gravity="bottom" />
+
+</LinearLayout>
