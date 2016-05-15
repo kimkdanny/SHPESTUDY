@@ -12,35 +12,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:paddingLeft="16dp"
         android:src="@drawable/background_state_drawable" />
 
     <TextView
         android:id="@+id/lbl_item_text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/im_item_icon"
-        android:layout_marginLeft="72dp"
-        android:layout_marginRight="48dp"
-        android:ellipsize="end"
-        android:fontFamily="sans-serif"
-        android:singleLine="true"
-        android:text="Sois comme l'eau mon ami"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:text="Sois comme l'eau mon ami" />
 
     <TextView
         android:id="@+id/lbl_item_sub_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lbl_item_text"
-        android:layout_marginLeft="72dp"
-        android:layout_marginRight="48dp"
-        android:ellipsize="end"
-        android:fontFamily="sans-serif"
-        android:singleLine="true"
-        android:text="Mononc' J"
-        android:textSize="14sp" />
+        android:singleLine="true" />
 
     <ImageView
         android:id="@+id/im_item_icon_secondary"
@@ -49,7 +35,6 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:clickable="true"
-        android:padding="16dp"
         android:src="@drawable/background_state_drawable"
         android:background="@drawable/background_state_drawable"
         />

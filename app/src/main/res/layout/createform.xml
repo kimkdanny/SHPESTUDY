@@ -1,78 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context="study.shpe.com.shpestudy.CreateFormActivity">
 
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop= "true"
-        android:layout_marginTop="50dp"
-        android:hint= "Name"
-        android:id="@+id/Name"
-        android:inputType="textPersonName"
-
-        />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
 
 
-    <DatePicker
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:inputType="textPersonName" />
 
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:spinnersShown="true"
-        android:onClick="showDatePickerDialog"
-        android:layout_below="@+id/Name"
-        android:id="@+id/DateTime"
-        android:inputType="datetime"
+        <DatePicker
+            android:id="@+id/DateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:inputType="datetime"
+            android:onClick="showDatePickerDialog" />
 
-        />
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/DateTime"
+            android:layout_below="@+id/DateTime"
+            android:onClick="showTimePickerDialog" />
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/timePicker"
-        android:id="@+id/Place"
-        android:hint="Place"
-        android:inputType="text"
+        <EditText
+            android:id="@+id/Place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timePicker"
+            android:hint="Location"
+            android:inputType="text" />
 
-        />
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Place"
-        android:id="@+id/Capacity"
-        android:hint="Capacity"
-        android:inputType="number"
+        <EditText
+            android:id="@+id/Capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Place"
+            android:hint="Capacity"
+            android:inputType="number" />
 
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Capacity"
+            android:layout_marginTop="50dp"
+            android:hint="Submit"
+            android:onClick="clicked" />
+        </RelativeLayout>
 
-        />
-    <Button
-        android:layout_marginTop="50dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Capacity"
-        android:id="@+id/Submit"
-        android:hint="Submit"
-        android:onClick="clicked"
-        android:background="#af361f1f" />
-
-    <TimePicker
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:id="@+id/timePicker"
-        android:layout_alignRight="@id/DateTime"
-        android:layout_below="@+id/DateTime"
-        android:layout_centerHorizontal="true"
-        android:onClick="showTimePickerDialog"
-        />
-
+        </ScrollView>
 
 </RelativeLayout>

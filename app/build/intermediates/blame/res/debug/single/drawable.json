@@ -16,16 +16,12 @@
         "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_edit_text_material.xml"
+        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/blue.jpg",
+        "source": "/home/christian/repos/SHPESTUDY/app/src/main/res/drawable/blue.jpg"
     },
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/background_state_drawable.xml",
-        "source": "/home/christian/repos/SHPESTUDY/app/src/main/res/drawable/background_state_drawable.xml"
     },
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
@@ -34,6 +30,10 @@
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/gray.jpg",
+        "source": "/home/christian/repos/SHPESTUDY/app/src/main/res/drawable/gray.jpg"
     },
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
@@ -56,8 +56,8 @@
         "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_colored_material.xml"
+        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/mybutton.xml",
+        "source": "/home/christian/repos/SHPESTUDY/app/src/main/res/drawable/mybutton.xml"
     },
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
@@ -74,6 +74,10 @@
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
         "source": "/home/christian/repos/SHPESTUDY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/otherbutton.xml",
+        "source": "/home/christian/repos/SHPESTUDY/app/src/main/res/drawable/otherbutton.xml"
     },
     {
         "merged": "/home/christian/repos/SHPESTUDY/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",

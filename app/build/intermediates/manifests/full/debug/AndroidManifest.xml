@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="21"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/shpe_dark" >
         <activity android:name="study.shpe.com.shpestudy.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,12 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name="study.shpe.com.shpestudy.CreateFormActivity" />
-        <activity
-            android:name="study.shpe.com.shpestudy.RecyclerView"
-            android:label="@string/title_activity_recycler_view"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="study.shpe.com.shpestudy.ui.ListActivity" />
         <activity android:name="study.shpe.com.shpestudy.ui.DetailActivity" />
+        <activity android:name="study.shpe.com.shpestudy.SignupActivity" >
+        </activity>
+        <activity android:name="study.shpe.com.shpestudy.SampleActivity" >
+        </activity>
     </application>
 
 </manifest>

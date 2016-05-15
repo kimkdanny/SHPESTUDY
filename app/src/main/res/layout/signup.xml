@@ -2,46 +2,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#205B8D">
+    android:padding="16dp">
 
     <EditText
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
         android:id="@+id/myName"
-        android:hint="Please enter your name"
-        android:inputType="textPersonName"
-        android:textColorHint="#FFFFFF"
-        android:singleLine="true"
-        android:gravity="center"
-        android:textColor="#FFFFFF"/>
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="200dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/myEmail"
-        android:hint="Please enter your email"
-        android:textColorHint="#FFFFFF"
-        android:gravity="center"
-        android:inputType="textEmailAddress"
-        android:textColor="#FFFFFF"
-        android:singleLine="true"
-        />
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:background="@drawable/mybutton"
-        android:hint="Sign Up"
-        android:id="@+id/submit"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="320dp"
-        android:textSize="25sp"
-        android:textColorHint="#F3EAEA"
-        android:textStyle="bold"
-        />
+        android:hint="Please enter your name"
+        android:inputType="textPersonName" />
 
+    <EditText
+        android:id="@+id/myEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/myName"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sign Up"
+        android:layout_below="@id/myEmail"/>
 
 </RelativeLayout>

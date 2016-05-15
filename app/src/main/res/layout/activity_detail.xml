@@ -12,14 +12,12 @@
     <TextView
         android:id="@+id/lbl_quote_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/lbl_quote_attribution"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lbl_quote_text"
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic" />
+/>
 </RelativeLayout>
