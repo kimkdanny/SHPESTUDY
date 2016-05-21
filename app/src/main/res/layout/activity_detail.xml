@@ -11,13 +11,12 @@
 
     <TextView
         android:id="@+id/lbl_quote_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
 
     <TextView
         android:id="@+id/lbl_quote_attribution"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lbl_quote_text"
-/>
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lbl_quote_text" />
 </RelativeLayout>

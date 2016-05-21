@@ -24,4 +24,7 @@ class Event {
 
     }
 
+111    public Event() {
+
+    }
 }

@@ -76,6 +76,8 @@ public class DerpData {
                     ListItem item = new ListItem();
                     item.setTitle(event.nameText);
                     item.setSubTitle(event.placeText);
+                    System.out.println(event.nameText + event.placeText);
+
                     data.add(item);
                     /*
                     al.add(event);
