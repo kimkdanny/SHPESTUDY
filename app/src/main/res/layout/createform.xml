@@ -54,11 +54,19 @@
             android:hint="Capacity"
             android:inputType="number" />
 
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Capacity"
+                android:hint="Description"
+                android:inputType="textMultiLine" />
+
         <Button
             android:id="@+id/Submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Capacity"
+            android:layout_below="@+id/description"
             android:layout_marginTop="50dp"
             android:hint="Submit"
             android:onClick="clicked" />

@@ -34,6 +34,13 @@ public class DerpAdapter extends RecyclerView.Adapter<DerpAdapter.DerpHolder>{
         this.itemClickCallback = itemClickCallback;
     }
 
+    public DerpAdapter(Context c){
+        inflater = LayoutInflater.from(c);
+        listData = new ArrayList();
+    }
+
+
+
     public DerpAdapter(List<ListItem> listData, Context c){
         inflater = LayoutInflater.from(c);
         this.listData = listData;

@@ -6,10 +6,13 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import study.shpe.com.shpestudy.DerpEvent;
 import study.shpe.com.shpestudy.R;
+import study.shpe.com.shpestudy.adapter.DerpAdapter;
 
 /**
  * Created by christian on 5/14/16.
@@ -43,7 +46,7 @@ public class DerpData {
     };
     private static final int icon = R.drawable.ic_star_black_24dp;
 
-    public static List<ListItem> getListData() {
+    public static List<ListItem> getListData(final DerpAdapter adapter) {
         final List<ListItem> data = new ArrayList<>();
 /*
         //Repeat process 4 times, so that we have enough data to demonstrate a scrollable
@@ -76,9 +79,29 @@ public class DerpData {
                     ListItem item = new ListItem();
                     item.setTitle(event.nameText);
                     item.setSubTitle(event.placeText);
-                    System.out.println(event.nameText + event.placeText);
 
-                    data.add(item);
+
+                    Calendar now = Calendar.getInstance();
+                    System.out.println("here");
+                    if(event.month < now.get(Calendar.MONTH)){
+                        child.getRef().removeValue();
+                    }
+                    else{
+                        if(event.month == now.get(Calendar.MONTH)){
+                            if(event.day < now.get(Calendar.DAY_OF_MONTH)){
+                                child.getRef().removeValue();
+                            }
+                            else {
+                                System.out.println("add");
+                                data.add(item);
+                            }
+                        }
+                        else{
+                            System.out.println("add2");
+                            data.add(item);
+                        }
+                    }
+                    adapter.notifyDataSetChanged();
                     /*
                     al.add(event);
                     System.out.println(event.nameText);

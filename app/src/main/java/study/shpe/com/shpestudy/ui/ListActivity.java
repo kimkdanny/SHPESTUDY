@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.firebase.client.Firebase;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import study.shpe.com.shpestudy.R;
 import study.shpe.com.shpestudy.adapter.DerpAdapter;
@@ -29,13 +30,16 @@ public class ListActivity extends AppCompatActivity implements DerpAdapter.ItemC
         super.onCreate(savedInstanceState);
         Firebase.setAndroidContext(this);
         setContentView(R.layout.activity_list);
+        adapter = new DerpAdapter(this);
 
-        listData = (ArrayList) DerpData.getListData();
+
+        System.out.println("REached this");
+        listData = (ArrayList) DerpData.getListData(adapter);
 
         recyclerView = (RecyclerView) findViewById(R.id.rec_list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        adapter = new DerpAdapter(DerpData.getListData(), this);
+        List<ListItem> l = DerpData.getListData(adapter);
         recyclerView.setAdapter(adapter);
         adapter.setItemClickCallback(this);
     }
