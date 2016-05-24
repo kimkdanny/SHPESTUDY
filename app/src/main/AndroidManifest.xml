@@ -22,6 +22,8 @@
         <activity android:name=".ui.DetailActivity"></activity>
         <activity android:name=".SignupActivity" >
         </activity>
+        <activity android:name=".WriteOnScreenActivity" >
+        </activity>
         <activity android:name=".SampleActivity" >
         </activity>
     </application>

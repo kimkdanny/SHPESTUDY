@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 
 import java.lang.reflect.Array;
+import study.shpe.com.shpestudy.ui.ListActivity;
 
 public class SignupActivity extends AppCompatActivity  {
 
@@ -30,7 +31,7 @@ public class SignupActivity extends AppCompatActivity  {
         userEmail= (EditText) findViewById(R.id.myEmail);
         userName= (EditText) findViewById(R.id.myName);
         userLogin= (Button) findViewById(R.id.submit);
-        j = new Intent(SignupActivity.this,SampleActivity.class);
+        j = new Intent(SignupActivity.this,ListActivity.class);
         userLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

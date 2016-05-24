@@ -16,6 +16,8 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
 import java.lang.reflect.Array;
+import java.util.List;
+import study.shpe.com.shpestudy.ui.ListActivity;
 
 public class MainActivity extends AppCompatActivity  {
     String email;
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity  {
         userLogin= (Button) findViewById(R.id.submit);
         userSignUp= (Button) findViewById(R.id.signUp);
         i = new Intent(MainActivity.this,SignupActivity.class);
-        j = new Intent(MainActivity.this,SampleActivity.class);
+        j = new Intent(MainActivity.this,ListActivity.class);
 
 
         userLogin.setOnClickListener(new View.OnClickListener() {
@@ -44,12 +46,18 @@ public class MainActivity extends AppCompatActivity  {
                     ref.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
+                            boolean found = false;
                             for(DataSnapshot child: dataSnapshot.getChildren()){
                                 User user = child.getValue(User.class);
-                                if(user.getEmail().equals(email)) {
+                                if (user.getEmail().equals(email)) {
+                                    found = true;
                                     startActivity(j);
                                     finish();
                                 }
+
+                            }
+                            if(found == false){
+                                Toast.makeText(getApplicationContext(),"Email not registered",Toast.LENGTH_SHORT).show();
                             }
 
 

@@ -9,6 +9,9 @@ import android.util.AttributeSet;
 import android.util.SizeF;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import com.firebase.client.Firebase;
 
 /**
  * Created by Kim on 5/7/16.
@@ -17,6 +20,7 @@ public class TouchEventView extends View{
     private Paint paint = new Paint();
     private Path path = new Path();
     private Canvas c = new Canvas();
+
 
     public TouchEventView(Context ctx, AttributeSet attrs) {
         super(ctx, attrs);
@@ -30,10 +34,17 @@ public class TouchEventView extends View{
         this.setBackgroundColor(Color.BLACK);
     }
 
+
+
+
     @Override
     protected void onDraw(Canvas canvas){
         canvas.drawPath(path, paint);
         c = canvas;
+    }
+
+    public Canvas getCanvas() {
+        return c;
     }
 
     @Override

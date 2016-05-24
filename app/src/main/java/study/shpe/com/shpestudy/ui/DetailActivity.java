@@ -12,6 +12,7 @@ public class DetailActivity extends AppCompatActivity {
     private static final String EXTRA_ATTR = "EXTRA_ATTR";
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,11 @@ public class DetailActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getBundleExtra(BUNDLE_EXTRAS);
 
-        ((TextView)findViewById(R.id.lbl_quote_text)).setText(extras.getString(EXTRA_QUOTE));
-        ((TextView)findViewById(R.id.lbl_quote_attribution)).setText(extras.getString(EXTRA_ATTR));
+        ((TextView)findViewById(R.id.eventName)).setText(extras.getString("NAME"));
+        ((TextView)findViewById(R.id.eventDate)).setText(extras.getString("DATE"));
+        ((TextView)findViewById(R.id.eventLocation)).setText(extras.getString("PLACE"));
+        ((TextView)findViewById(R.id.eventTime)).setText(extras.getString("TIME"));
+        ((TextView)findViewById(R.id.description)).setText(extras.getString("DESCRIPTION"));
+
     }
 }

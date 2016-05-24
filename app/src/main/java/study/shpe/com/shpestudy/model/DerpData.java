@@ -1,5 +1,6 @@
 package study.shpe.com.shpestudy.model;
 
+import android.support.v7.widget.RecyclerView;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -46,7 +47,7 @@ public class DerpData {
     };
     private static final int icon = R.drawable.ic_star_black_24dp;
 
-    public static List<ListItem> getListData(final DerpAdapter adapter) {
+    public static List<ListItem> getListData() {
         final List<ListItem> data = new ArrayList<>();
 /*
         //Repeat process 4 times, so that we have enough data to demonstrate a scrollable
@@ -77,8 +78,12 @@ public class DerpData {
 
                     */
                     ListItem item = new ListItem();
-                    item.setTitle(event.nameText);
-                    item.setSubTitle(event.placeText);
+                    item.capacity=event.capacityText;
+                    item.date=event.month + "/" + event.day;
+                    item.description = event.description;
+                    item.name = event.nameText;
+                    item.place = event.placeText;
+                    item.time = event.hour + ": " + event.minute;
 
 
                     Calendar now = Calendar.getInstance();
@@ -101,7 +106,6 @@ public class DerpData {
                             data.add(item);
                         }
                     }
-                    adapter.notifyDataSetChanged();
                     /*
                     al.add(event);
                     System.out.println(event.nameText);

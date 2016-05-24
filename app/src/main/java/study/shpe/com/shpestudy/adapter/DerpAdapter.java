@@ -27,17 +27,12 @@ public class DerpAdapter extends RecyclerView.Adapter<DerpAdapter.DerpHolder>{
 
     public interface ItemClickCallback {
         void onItemClick(int p);
-        void onSecondaryIconClick(int p);
     }
 
     public void setItemClickCallback(final ItemClickCallback itemClickCallback) {
         this.itemClickCallback = itemClickCallback;
     }
 
-    public DerpAdapter(Context c){
-        inflater = LayoutInflater.from(c);
-        listData = new ArrayList();
-    }
 
 
 
@@ -48,26 +43,24 @@ public class DerpAdapter extends RecyclerView.Adapter<DerpAdapter.DerpHolder>{
 
     @Override
     public DerpAdapter.DerpHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.list_item, parent, false);
+        View view = inflater.inflate(R.layout.row, parent, false);
         return new DerpHolder(view);
     }
 
     @Override
     public void onBindViewHolder(DerpHolder holder, int position) {
         ListItem item = listData.get(position);
-        holder.title.setText(item.getTitle());
-        holder.subTitle.setText(item.getSubTitle());
-        if (item.isFavourite()){
-            holder.secondaryIcon.setImageResource(R.drawable.ic_star_black_24dp);
-        } else {
-            holder.secondaryIcon.setImageResource(R.drawable.ic_star_black_24dp);
-        }
+        holder.name.setText(item.name);
+        holder.date.setText(item.date);
+        holder.time.setText(item.time);
+        holder.place.setText(item.place);
+
     }
 
 
     public void setListData(ArrayList<ListItem> exerciseList) {
-        this.listData.clear();
-        this.listData.addAll(exerciseList);
+        listData = exerciseList;
+        notifyDataSetChanged();
     }
 
     @Override
@@ -77,19 +70,18 @@ public class DerpAdapter extends RecyclerView.Adapter<DerpAdapter.DerpHolder>{
 
     class DerpHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        ImageView thumbnail;
-        ImageView secondaryIcon;
-        TextView title;
-        TextView subTitle;
+        TextView name;
+        TextView date;
+        TextView time;
+        TextView place;
         View container;
 
         public DerpHolder(View itemView) {
             super(itemView);
-            thumbnail = (ImageView)itemView.findViewById(R.id.im_item_icon);
-            secondaryIcon = (ImageView)itemView.findViewById(R.id.im_item_icon_secondary);
-            secondaryIcon.setOnClickListener(this);
-            subTitle = (TextView)itemView.findViewById(R.id.lbl_item_sub_title);
-            title = (TextView)itemView.findViewById(R.id.lbl_item_text);
+            name = (TextView)itemView.findViewById(R.id.eventName);
+            date = (TextView)itemView.findViewById(R.id.eventDate);
+            time = (TextView)itemView.findViewById(R.id.eventTime);
+            place = (TextView)itemView.findViewById(R.id.eventLocation);
             container = (View)itemView.findViewById(R.id.cont_item_root);
             container.setOnClickListener(this);
         }
@@ -98,8 +90,6 @@ public class DerpAdapter extends RecyclerView.Adapter<DerpAdapter.DerpHolder>{
         public void onClick(View v) {
             if (v.getId() == R.id.cont_item_root){
                 itemClickCallback.onItemClick(getAdapterPosition());
-            } else {
-                itemClickCallback.onSecondaryIconClick(getAdapterPosition());
             }
         }
     }

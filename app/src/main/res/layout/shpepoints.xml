@@ -1,51 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:weightSum="1"
+    android:paddingTop="25dp"
+    android:id="@+id/pointsLayout">
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/myName"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
+        android:layout_width="294dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
         android:inputType="date"
-        android:text="Date" />
+        android:ems="10"
+        android:id="@+id/myDate"
+        android:layout_gravity="center_horizontal"
+        android:hint="Date"
+        android:textColor="#ffffff" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
+        android:layout_width="304dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:text="Activity" />
+        android:id="@+id/myAct"
+        android:layout_gravity="center_horizontal"
+        android:hint="Activity"
+        android:textColor="#ffffff" />
 
-    <View
-        android:id="@+id/random_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/editText3" />
-
-    <ViewStub
-        android:id="@+id/viewStub"
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="304dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/random_view" />
+        android:id="@+id/myEmail"
+        android:layout_gravity="center_horizontal"
+        android:hint="Email"
+        android:textColor="#ffffff" />
+    <LinearLayout
+        android:id="@+id/canvas"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:layout_marginTop="50dp">
+    </LinearLayout>
+
 
     <Button
-        android:id="@+id/angry_btn"
-        android:layout_width="match_parent"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/viewStub"
         android:contextClickable="true"
-        android:onClick="onLoginButtonClick"
-        android:text="Login" />
-</RelativeLayout>
+        android:onClick="onPointsSubmit"
+        android:text="SUBMIT"
+        android:id="@+id/angry_btn"
+        android:focusable="false"
+        android:textAlignment="center"
+        android:layout_above="@+id/angry_btn"
+        android:layout_alignStart="@+id/angry_btn"
+        android:layout_alignLeft="@+id/angry_btn"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+
+</LinearLayout>
